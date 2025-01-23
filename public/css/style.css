@@ -1,0 +1,56 @@
+* {
+    box-sizing: border-box;
+    font-family: "Outfit", serif;
+}
+
+:root {
+    --color-1: #001A6E;
+    --color-2: #074799;
+    --color-3: #009990;
+    --color-4: #E1FFBB;
+
+    --color-sec: #d3d3d3;
+}
+  
+.bg-color1 { background-color: var(--color-1); }
+.bg-color2 { background-color: var(--color-2); }
+.bg-color3 { background-color: var(--color-3); }
+.bg-color4 { background-color: var(--color-4); }
+
+.bg-color3-sec { background-color: var(--color-3-sec); }
+
+.text-color1 { color: var(--color-1); }
+.text-color2 { color: var(--color-2); }
+.text-color3 { color: var(--color-3); }
+.text-color4 { color: var(--color-4); }
+
+.btn-color1 { background-color: var(--color-1); color: var(--color-4); }
+.btn-color1:hover { background-color: var(--color-2); color: var(--color-4); border: 1px solid var(--color-1); }
+.btn-color2 { background-color: var(--color-2); color: var(--color-1); }
+.btn-color2:hover { background-color: var(--color-1); color: var(--color-2); border: 1px solid var(--color-2); }
+.btn-color3 { background-color: var(--color-3); color: var(--color-4); }
+.btn-color3:hover { background-color: var(--color-4); color: var(--color-3); border: 1px solid var(--color-4); }
+.btn-color4 { background-color: var(--color-4); color: var(--color-1); }
+.btn-color4:hover { background-color: var(--color-3); color: var(--color-4); border: 1px solid var(--color-4); }
+
+.bg-web { background-size: cover; background-attachment: fixed; background-position: center; background-repeat: no-repeat; }
+
+.width-100 { width:100% !important;}
+.height-50 { height:50vh !important;}
+.height-100 { height:100% !important;}
+
+.ls-s { letter-spacing:-0.5px; }
+.ls-xs { letter-spacing:-1px; }
+.ls-xxs { letter-spacing:-1.5px; }
+
+.lh-s { line-height: 1; }
+.lh-xs { line-height: 0.8; }
+
+.fw-800 { font-weight:800; }
+.fw-900 { font-weight:900; }
+
+/* Other */
+.card-reach { transition: 0.3s; }
+.card-reach:hover { background-color: var(--color-sec); }
+
+.card-skills { background-color: transparent; border: 1px solid var(--color-4); color: var(--color-4); height:193px; }
