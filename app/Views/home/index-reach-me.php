@@ -1,4 +1,4 @@
-<section class="bg-color3 d-flex justify-content-center align-items-center" style="padding: 120px 0" id="about-me">
+<section class="bg-color3 d-flex justify-content-center align-items-center" style="padding: 120px 0" id="reach-me">
 <div class="">
     <div class="d-flex justify-content-center">
         <div class="position-relative bg-color2" style="width:340px;height:40px;">

@@ -22,10 +22,7 @@
           <a class="nav-link ls-nav text-color4" href="<?= base_url('#project') ?>">My Project</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link ls-nav text-color4" href="<?= base_url('#services') ?>">Services</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link ls-nav text-color4" href="<?= base_url('#contact-me') ?>">Contact Me</a>
+          <a class="nav-link ls-nav text-color4" href="<?= base_url('#business') ?>">Business</a>
         </li>
         <li class="nav-item">
           <a class="nav-link ls-nav text-color4" href="<?= base_url('#reach-me') ?>">Reach Me</a>

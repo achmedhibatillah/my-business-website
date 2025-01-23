@@ -43,6 +43,9 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap" rel="stylesheet">
 
+    <!-- Github Calendar -->
+    <link rel="stylesheet" href="<?= base_url('css/github-calendar.css') ?>"/>
+
     <!-- Internal CSS -->
     <link rel="stylesheet" href="<?= base_url('css/style.css') ?>">
 

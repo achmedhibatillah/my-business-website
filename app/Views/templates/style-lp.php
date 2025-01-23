@@ -8,9 +8,10 @@
     background-position: center center;
     background-repeat: no-repeat;
 }   
-.col-hi {
-    margin-top:-250px;
-} 
+.col-hi { margin-top:-250px; }
+.text-p-responsive { font-size: 14px; }
+.text-p-responsive-2 { font-size: 14px; }
+.card-body-project { margin-top: 95px; }
 }
 
 /* Tablet (601px - 1024px) */
@@ -20,9 +21,12 @@
     background-size: 100vw auto;
     background-attachment: scroll;
     background-position: center center;
-    background-repeat: repeat-y;
+    background-repeat: no-repeat;
 }
 .col-hi { margin-top:90px; } 
+.text-p-responsive { font-size: 15px; }
+.text-p-responsive-2 { font-size: 10px; }
+.card-body-project { margin-top: 80px; }
 }
 
 /* Laptop (1025px - 1366px) */
@@ -32,8 +36,11 @@
     background-size: 100vw auto;
     background-attachment: scroll;
     background-position: center center;
-    background-repeat: repeat-y;
+    background-repeat: no-repeat;
 }
 .col-hi { margin-top:115px; } 
+.text-p-responsive { font-size: 16px; }
+.text-p-responsive-2 { font-size: 16px; }
+.card-body-project { margin-top: 130px; }
 }
 </style>

@@ -1,4 +1,4 @@
-<section class="position-relative bg-lp-top" style="height:100vh;">
+<section class="position-relative bg-lp-top bg-color4" style="height:100vh;">
 <div class="row m-0 p-0 width-100 height-100">
     <div class="col-md-6"></div>
     <div class="col-md-6 d-flex justify-content-center justify-content-sm-start align-items-start align-items-sm-center col-hi">
@@ -36,5 +36,7 @@
 <?= $this->include('home/index-skills') ?>
 
 <?= $this->include('home/index-project') ?>
+
+<?= $this->include('home/index-business') ?>
 
 <?= $this->include('home/index-reach-me') ?>
