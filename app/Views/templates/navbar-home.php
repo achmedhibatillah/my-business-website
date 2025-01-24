@@ -33,7 +33,7 @@
     <div class="d-flex align-items-center justify-content-between order-2" id="btn-nav">
       <a href="<?= base_url('message') ?>" id="" class="me-auto" style="text-decoration: none !important;"><i class="fas fa-comments text-color4"></i></a>
       <button class="navbar-toggler ms-auto" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation" style="border: none;">
-        <i class="fas fa-bars text-color1"></i>
+        <i class="fas fa-bars text-color4"></i>
       </button>
     </div>
   </div>
@@ -102,12 +102,16 @@ document.addEventListener("DOMContentLoaded", function () {
     navbarCollapse.addEventListener("show.bs.collapse", function () {
         navbar.style.borderRadius = "7px";
         navbarcont.style.borderRadius = "7px";
+        navbarcont.style.paddingTop = "25px";
+        navbarCollapse.style.marginTop = "20px";
     });
 
     // Event saat navbar ditutup
     navbarCollapse.addEventListener("hide.bs.collapse", function () {
         navbar.style.borderRadius = "50px";
         navbarcont.style.borderRadius = "50px";
+        navbarcont.style.paddingTop = "0px";
+        navbarCollapse.style.marginTop = "0px";
     });
 });
 

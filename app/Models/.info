@@ -1,0 +1,195 @@
+CREATE TABLE packages (
+    packets_id INT AUTO_INCREMENT PRIMARY KEY,
+    packets_name VARCHAR(255) NOT NULL,
+    packets_description TEXT,
+    packets_price DECIMAL(15, 2) NOT NULL,
+    packets_features INT,
+    packets_responsive BOOLEAN,
+    packets_hosting BOOLEAN,
+    packets_domain BOOLEAN,
+    packets_ssl BOOLEAN,
+    packets_auth BOOLEAN,
+    packets_root BOOLEAN,
+    packets_crud INT,
+    packets_uiux INT,
+    packets_statistic BOOLEAN,
+    packets_api BOOLEAN,
+    packets_logo BOOLEAN,
+    created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP,
+    updated_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP ON UPDATE CURRENT_TIMESTAMP
+);
+INSERT INTO packages (
+    packets_name, 
+    packets_description, 
+    packets_image,
+    packets_price, 
+    packets_features, 
+    packets_responsive, 
+    packets_hosting, 
+    packets_domain, 
+    packets_ssl, 
+    packets_auth, 
+    packets_root, 
+    packets_crud, 
+    packets_uiux, 
+    packets_statistic, 
+    packets_api, 
+    packets_logo
+) VALUES (
+    'Starter', 
+    'Affordable access for personal websites or online portfolios.',
+    'starter.png',
+    21, 
+    5,  -- Jumlah fitur
+    TRUE,  -- Responsive
+    FALSE,  -- Hosting
+    FALSE,  -- Domain
+    FALSE,  -- SSL
+    FALSE,  -- Auth
+    FALSE,  -- Root
+    0,  -- Jumlah fitur CRUD
+    0,  -- Jumlah fitur UI/UX
+    FALSE,  -- Statistik
+    FALSE,  -- API
+    FALSE  -- Logo
+);
+INSERT INTO packages (
+    packets_name, 
+    packets_description, 
+    packets_image,
+    packets_price, 
+    packets_features, 
+    packets_responsive, 
+    packets_hosting, 
+    packets_domain, 
+    packets_ssl, 
+    packets_auth, 
+    packets_root, 
+    packets_crud, 
+    packets_uiux, 
+    packets_statistic, 
+    packets_api, 
+    packets_logo
+) VALUES (
+    'Basic', 
+    'An elegant solution for small businesses with a professional look.',
+    'basic.png',
+    52, 
+    7,  -- Jumlah fitur
+    TRUE,  -- Responsive
+    TRUE,  -- Hosting
+    TRUE,  -- Domain
+    TRUE,  -- SSL
+    FALSE,  -- Auth
+    FALSE,  -- Root
+    0,  -- Jumlah fitur CRUD
+    0,  -- Jumlah fitur UI/UX
+    FALSE,  -- Statistik
+    FALSE,  -- API
+    FALSE  -- Logo
+);
+INSERT INTO packages (
+    packets_name, 
+    packets_description, 
+    packets_image,
+    packets_price, 
+    packets_features, 
+    packets_responsive, 
+    packets_hosting, 
+    packets_domain, 
+    packets_ssl, 
+    packets_auth, 
+    packets_root, 
+    packets_crud, 
+    packets_uiux, 
+    packets_statistic, 
+    packets_api, 
+    packets_logo
+) VALUES (
+    'Regular', 
+    'A dynamic website that grows with your business needs.',
+    'regular.png',
+    89, 
+    12,  -- Jumlah fitur
+    TRUE,  -- Responsive
+    TRUE,  -- Hosting
+    TRUE,  -- Domain
+    TRUE,  -- SSL
+    TRUE,  -- Auth
+    TRUE,  -- Root
+    3,  -- Jumlah fitur CRUD
+    0,  -- Jumlah fitur UI/UX
+    FALSE,  -- Statistik
+    FALSE,  -- API
+    FALSE  -- Logo
+);
+INSERT INTO packages (
+    packets_name, 
+    packets_description, 
+    packets_image,
+    packets_price, 
+    packets_features, 
+    packets_responsive, 
+    packets_hosting, 
+    packets_domain, 
+    packets_ssl, 
+    packets_auth, 
+    packets_root, 
+    packets_crud, 
+    packets_uiux, 
+    packets_statistic, 
+    packets_api, 
+    packets_logo
+) VALUES (
+    'Premium', 
+    'Stunning design and full functionality for rapidly growing businesses.',
+    'premium.png',
+    148, 
+    18,  -- Jumlah fitur
+    TRUE,  -- Responsive
+    TRUE,  -- Hosting
+    TRUE,  -- Domain
+    TRUE,  -- SSL
+    TRUE,  -- Auth
+    TRUE,  -- Root
+    5,  -- Jumlah fitur CRUD
+    2,  -- Jumlah fitur UI/UX
+    TRUE,  -- Statistik
+    FALSE,  -- API
+    FALSE  -- Logo
+);
+INSERT INTO packages (
+    packets_name, 
+    packets_description, 
+    packets_image,
+    packets_price, 
+    packets_features, 
+    packets_responsive, 
+    packets_hosting, 
+    packets_domain, 
+    packets_ssl, 
+    packets_auth, 
+    packets_root, 
+    packets_crud, 
+    packets_uiux, 
+    packets_statistic, 
+    packets_api, 
+    packets_logo
+) VALUES (
+    'Corporate', 
+    'High-class websites ready to handle large traffic volumes.',
+    'corporate.png',
+    399, 
+    30,  -- Jumlah fitur
+    TRUE,  -- Responsive
+    TRUE,  -- Hosting
+    TRUE,  -- Domain
+    TRUE,  -- SSL
+    TRUE,  -- Auth
+    TRUE,  -- Root
+    10,  -- Jumlah fitur CRUD
+    5,  -- Jumlah fitur UI/UX
+    TRUE,  -- Statistik
+    TRUE,  -- API
+    TRUE  -- Logo
+);

@@ -28,6 +28,7 @@
 .border-color2 { border: 1px solid var(--color-2); }
 .border-color3 { border: 1px solid var(--color-3); }
 .border-color4 { border: 1px solid var(--color-4); }
+.border-colorsec { border: 1px solid var(--color-sec); }
 .border-color1-m { border: 3px solid var(--color-1); }
 .border-color2-m { border: 3px solid var(--color-2); }
 .border-color3-m { border: 3px solid var(--color-3); }
@@ -62,7 +63,7 @@
 .no-select { user-select: none; -webkit-user-select: none; -moz-user-select: none; -ms-user-select: none; cursor: default; }
 
 /* Other */
-.card-reach { transition: 0.3s; }
-.card-reach:hover { background-color: var(--color-sec); }
+.card-reach { background: linear-gradient(to bottom right, var(--color-sec), var(--color-4), var(--color-4)); transition: 0.3s; }
+.card-reach:hover { background: linear-gradient(to top, var(--color-sec), var(--color-sec)); }
 
 .card-skills { background-color: transparent; border: 1px solid var(--color-4); color: var(--color-4); height:193px; }
