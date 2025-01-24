@@ -38,7 +38,7 @@
                 </div>
                 <hr class="text-color1">
                 <p class="text-color1 text-center mx-3 lh-s"><?= $x['packets_description'] ?></p>
-                <a href="<?= base_url('') ?>" class="text-center text-color2 fst-italic td-none">show detail →</a>
+                <a href="<?= base_url('package-' . strtolower($x['packets_name'])) ?>" class="text-center text-color2 fst-italic td-none">show detail →</a>
             </div>
         </div>
     <?php endforeach; ?>

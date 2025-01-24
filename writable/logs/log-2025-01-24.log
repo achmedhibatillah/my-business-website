@@ -17,3 +17,50 @@ in APPPATH\Views\home\index-business.php on line 33.
 14 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
 15 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
 16 SYSTEMPATH\rewrite.php(44): require_once('C:\\Users\\WINDOWS 11\\Documents\\1-Proyek\\achmedhibatillah\\public\\index.php')
+CRITICAL - 2025-01-24 12:57:25 --> ErrorException: Undefined array key "packets_namxe"
+[Method: GET, Route: package-regular]
+in APPPATH\Views\home\package.php on line 2.
+ 1 APPPATH\Views\home\package.php(2): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "packets_namxe"', 'C:\\Users\\WINDOWS 11\\Documents\\1-Proyek\\achmedhibatillah\\app\\Views\\home\\package.php', 2)
+ 2 SYSTEMPATH\View\View.php(234): include('C:\\Users\\WINDOWS 11\\Documents\\1-Proyek\\achmedhibatillah\\app\\Views\\home\\package.php')
+ 3 SYSTEMPATH\View\View.php(237): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1171): CodeIgniter\View\View->render('home/package', [], true)
+ 5 APPPATH\Controllers\Home.php(58): view('home/package', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Home->package_detail('regular')
+ 7 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 8 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+12 SYSTEMPATH\rewrite.php(44): require_once('C:\\Users\\WINDOWS 11\\Documents\\1-Proyek\\achmedhibatillah\\public\\index.php')
+CRITICAL - 2025-01-24 13:04:56 --> ErrorException: Undefined array key "package_price"
+[Method: GET, Route: package-regular]
+in APPPATH\Views\home\package.php on line 8.
+ 1 APPPATH\Views\home\package.php(8): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "package_price"', 'C:\\Users\\WINDOWS 11\\Documents\\1-Proyek\\achmedhibatillah\\app\\Views\\home\\package.php', 8)
+ 2 SYSTEMPATH\View\View.php(234): include('C:\\Users\\WINDOWS 11\\Documents\\1-Proyek\\achmedhibatillah\\app\\Views\\home\\package.php')
+ 3 SYSTEMPATH\View\View.php(237): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1171): CodeIgniter\View\View->render('home/package', [], true)
+ 5 APPPATH\Controllers\Home.php(58): view('home/package', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Home->package_detail('regular')
+ 7 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 8 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+12 SYSTEMPATH\rewrite.php(44): require_once('C:\\Users\\WINDOWS 11\\Documents\\1-Proyek\\achmedhibatillah\\public\\index.php')
+CRITICAL - 2025-01-24 14:31:41 --> CodeIgniter\View\Exceptions\ViewException: Invalid file: "templates/reach-me.php"
+[Method: GET, Route: package-corporate]
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 41.
+ 1 SYSTEMPATH\View\View.php(222): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('templates/reach-me.php')
+ 2 SYSTEMPATH\View\View.php(487): CodeIgniter\View\View->render('templates/reach-me', null, true)
+ 3 APPPATH\Views\home\package.php(85): CodeIgniter\View\View->include('templates/reach-me')
+ 4 SYSTEMPATH\View\View.php(234): include('C:\\Users\\WINDOWS 11\\Documents\\1-Proyek\\achmedhibatillah\\app\\Views\\home\\package.php')
+ 5 SYSTEMPATH\View\View.php(237): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 6 SYSTEMPATH\Common.php(1171): CodeIgniter\View\View->render('home/package', [], true)
+ 7 APPPATH\Controllers\Home.php(58): view('home/package', [...])
+ 8 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Home->package_detail('corporate')
+ 9 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+10 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+11 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+12 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+13 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+14 SYSTEMPATH\rewrite.php(44): require_once('C:\\Users\\WINDOWS 11\\Documents\\1-Proyek\\achmedhibatillah\\public\\index.php')

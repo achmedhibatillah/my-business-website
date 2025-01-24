@@ -40,4 +40,24 @@ class Home extends BaseController
             view('templates/footbar-home') .
             view('templates/footer');
     }
+
+    public function package_detail($slug): string
+    {
+        $status = [
+            'page' => 'package',
+            'judul' => 'Package'
+        ];
+
+        $name = ucfirst($slug);
+        $package = $this->packagesModel->where('packets_name', $name)->first();
+    
+        return 
+            view('templates/header', $status) .
+            view('templates/navbar-home') .
+            view('home/package', [
+                'package' => $package
+            ]) .
+            view('templates/footbar-home') .
+            view('templates/footer');
+    }
 }

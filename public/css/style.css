@@ -10,12 +10,15 @@
     --color-4: #E1FFBB;
 
     --color-sec: #d3d3d3;
+    --color-seclight: #e9ebff;
 }
   
 .bg-color1 { background-color: var(--color-1); }
 .bg-color2 { background-color: var(--color-2); }
 .bg-color3 { background-color: var(--color-3); }
 .bg-color4 { background-color: var(--color-4); }
+.bg-colorsec { background-color: var(--color-sec); }
+.bg-colorseclight { background-color: var(--color-seclight); }
 
 .bg-color3-sec { background-color: var(--color-3-sec); }
 
@@ -48,6 +51,9 @@
 .btn-color4 { background-color: var(--color-4); color: var(--color-1); }
 .btn-color4:hover { background-color: var(--color-3); color: var(--color-4); border: 1px solid var(--color-4); }
 
+.btn-color2-4 { background-color: var(--color-2); color: var(--color-4); }
+.btn-color2-4:hover { background-color: var(--color-1); color: var(--color-4); border: 1px solid var(--color-2); }
+
 .bg-web { background-size: cover; background-attachment: fixed; background-position: center; background-repeat: no-repeat; }
 
 .width-100 { width:100% !important;}
@@ -65,6 +71,7 @@
 .fw-800 { font-weight:800; }
 .fw-900 { font-weight:900; }
 
+.cursor-pointer { cursor: pointer; }
 .td-none { text-decoration: none !important; }
 .no-select { user-select: none; -webkit-user-select: none; -moz-user-select: none; -ms-user-select: none; cursor: default; }
 

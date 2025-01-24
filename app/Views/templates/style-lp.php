@@ -25,6 +25,7 @@
     background-repeat: no-repeat;
 }
 .col-hi { margin-top:-270px; }
+.text-responsive { font-size: 0.8rem; }
 .text-p-responsive { font-size: 14px; }
 .text-p-responsive-2 { font-size: 14px; }
 .card-body-project { margin-top: 95px; }
@@ -40,6 +41,7 @@
     background-repeat: no-repeat;
 }
 .col-hi { margin-top:70px; } 
+.text-responsive { font-size: 0.9rem; }
 .text-p-responsive { font-size: 15px; }
 .text-p-responsive-2 { font-size: 10px; }
 .card-body-project { margin-top: 80px; }
@@ -55,6 +57,7 @@
     background-repeat: no-repeat;
 }
 .col-hi { margin-top:90px; } 
+.text-responsive { font-size: 1rem; }
 .text-p-responsive { font-size: 16px; }
 .text-p-responsive-2 { font-size: 16px; }
 .card-body-project { margin-top: 130px; }
