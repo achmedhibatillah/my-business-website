@@ -64,5 +64,9 @@
             </div>
         </div>
     </div>
+    <div class="bg-color2 mx-4" style="border-radius:30px;" data-aos="zoom-in" data-aos-mirror="false" data-aos-easing="ease-in-out-back">
+        <h4 class="text-color4 fw-800 text-center mt-5 py-3 ls-xs">© Achmed Hibatillah <?= date('Y') ?></h4>
+    </div>
+    <p class="text-center text-color4 ls-xs" data-aos="zoom-in" data-aos-mirror="false" data-aos-easing="ease-in-out-back" data-aos-delay="400">Malang City, East Java, Indonesia</p>
 </div>
 </section>

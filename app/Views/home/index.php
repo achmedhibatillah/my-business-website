@@ -32,7 +32,7 @@
         <img src="<?= base_url('images/emoji/job-developer.png') ?>" class="position-absolute" style="width:50px;top:-33px;right:20px;transform:rotate(7deg)">
         <span id="type-about-me"></span>
     </div>
-    <a href="<?= base_url('about-me') ?>" class="btn btn-color4 btn-sm mt-2 px-5 fw-bold" data-aos="fade-up" data-aos-delay="10" data-aos-offset="50" data-aos-easing="ease-in-out-back">More <i class="fas fa-external-link-alt ms-2"></i></a>
+    <a href="<?= base_url('profile') ?>" class="btn btn-color4 btn-sm mt-2 px-5 fw-bold" data-aos="fade-up" data-aos-delay="10" data-aos-offset="50" data-aos-easing="ease-in-out-back">More <i class="fas fa-external-link-alt ms-2"></i></a>
 </div>
 </section>
 
@@ -41,5 +41,7 @@
 <?= $this->include('home/index-project') ?>
 
 <?= $this->include('home/index-business') ?>
+
+<?= $this->include('home/index-message') ?>
 
 <?= $this->include('home/index-reach-me') ?>

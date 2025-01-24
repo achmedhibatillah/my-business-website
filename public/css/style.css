@@ -28,6 +28,7 @@
 .text-color4 { color: var(--color-4); }
 .text-colorsec { color: var(--color-sec); }
 
+.border-none { border: none !important; }
 .border-color1 { border: 1px solid var(--color-1); }
 .border-color2 { border: 1px solid var(--color-2); }
 .border-color3 { border: 1px solid var(--color-3); }
@@ -72,11 +73,12 @@
 .fw-900 { font-weight:900; }
 
 .cursor-pointer { cursor: pointer; }
+.img-death { pointer-events: none; -webkit-user-drag: none; }
 .td-none { text-decoration: none !important; }
 .no-select { user-select: none; -webkit-user-select: none; -moz-user-select: none; -ms-user-select: none; cursor: default; }
 
 /* Other */
-.card-reach { background: linear-gradient(to bottom right, var(--color-sec), var(--color-4), var(--color-4)); transition: 0.3s; }
+.card-reach { background: linear-gradient(to bottom right, var(--color-sec), var(--color-4), var(--color-4)); transition: 0.5s; }
 .card-reach:hover { background: linear-gradient(to top, var(--color-sec), var(--color-sec)); }
 
 .card-skills { background-color: transparent; border: 1px solid var(--color-4); color: var(--color-4); height:193px; }

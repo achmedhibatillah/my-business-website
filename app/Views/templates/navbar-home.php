@@ -31,7 +31,7 @@
     </div>
     <!-- Toggler and User Icon -->
     <div class="d-flex align-items-center justify-content-between order-2" id="btn-nav">
-      <a href="<?= base_url('message') ?>" id="" class="me-auto" style="text-decoration: none !important;"><i class="fas fa-comments text-color4"></i></a>
+      <a href="<?= base_url('chat') ?>" id="" class="me-auto" style="text-decoration: none !important;"><i class="fas fa-comments text-color4"></i></a>
       <button class="navbar-toggler ms-auto" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation" style="border: none;">
         <i class="fas fa-bars text-color4"></i>
       </button>

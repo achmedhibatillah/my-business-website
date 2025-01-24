@@ -41,6 +41,21 @@ class Home extends BaseController
             view('templates/footer');
     }
 
+    public function profile(): string
+    {
+        $status = [
+            'page' => 'profile',
+            'judul' => 'Profile'
+        ];
+    
+        return 
+            view('templates/header', $status) .
+            view('templates/navbar-home') .
+            view('condition/dev') .
+            view('templates/footbar-home') .
+            view('templates/footer');
+    }
+
     public function package_detail($slug): string
     {
         $status = [
@@ -57,6 +72,21 @@ class Home extends BaseController
             view('home/package', [
                 'package' => $package
             ]) .
+            view('templates/footbar-home') .
+            view('templates/footer');
+    }
+
+    public function chat(): string
+    {
+        $status = [
+            'page' => 'chat',
+            'judul' => 'Chat'
+        ];
+    
+        return 
+            view('templates/header', $status) .
+            view('templates/navbar-home') .
+            view('condition/dev') .
             view('templates/footbar-home') .
             view('templates/footer');
     }

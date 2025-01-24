@@ -1,4 +1,4 @@
-<section class="bg-color4 d-flex justify-content-center" style="min-height:100vh;padding-top:100px;">
+<section class="bg-color4 d-flex justify-content-center" style="min-height:100vh;padding-top:120px;">
 <div class="container m-0 p-0" style="width:80%;">
     <h1 class="text-color2 fw-bold mb-0 position-relative" style="font-size:58px;">
         <?= $package['packets_name'] ?>
@@ -92,7 +92,7 @@
             <div class="ms-0 ms-md-5 mt-3">
                 <div class="card p-3 bg-color4">
                     <form>
-                        <p class="mb-4 text-color2">* Before paying for your order, I would like to contact you via email to know what your requirement.</p>
+                        <p class="mb-4 text-color2">* Before paying for your order, I would like to contact you via email and invite you for online meet to know what your requirement.</p>
                         <div class="form-group mb-3">
                             <label class="text-color2" for="exampleInputEmail1">Email address</label>
                             <input type="email" class="form-control bg-colorseclight" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="...">
@@ -105,7 +105,7 @@
                                     <input type="text" class="form-control bg-colorseclight" id="firstname" placeholder="...">
                                 </div>
                             </div>
-                            <div class="col-6 m-0 p-0 mb-3">
+                            <div class="col-6 m-0 p-0 mb-4">
                                 <div class="form-group">
                                     <label class="text-color2" for="lastname">Last name</label>
                                     <input type="text" class="form-control bg-colorseclight" id="lastname" placeholder="...">
@@ -113,7 +113,7 @@
                             </div>
                         </div>
                         <div class="form-group mb-3">
-                            <label class="text-color2" for="what">What kind of website do you want?</label>
+                            <label class="text-color2 lh-1" for="what">What kind of website do you want?</label>
                             <textarea type="text" class="form-control bg-colorseclight" id="what" placeholder="..." style="height:100px;"></textarea>
                         </div>
                         <button href="<?= base_url('pay') ?>" class="btn btn-sm btn-color2-4 mt-3 px-5">Order this package now!</button>

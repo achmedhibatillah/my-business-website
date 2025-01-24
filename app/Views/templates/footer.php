@@ -14,7 +14,7 @@
   AOS.init({
       once: false,  // Memastikan animasi diputar ulang setiap kali elemen masuk viewport
       mirror: true, // Memutar animasi lagi saat elemen masuk viewport dari arah berlawanan
-      duration: 1000,  // Durasi animasi dalam milidetik (1 detik)
+      duration: 700,  // Durasi animasi dalam milidetik (1 detik)
       easing: 'ease-in-out',
       offset: 20
   });
