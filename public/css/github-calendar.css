@@ -1,5 +1,5 @@
 :root {
---color-calendar-graph-day-bg: #E1FFBB;
+--color-calendar-graph-day-bg: var(--color-sec);
 --color-calendar-graph-day-L1-bg: #39dd34;
 --color-calendar-graph-day-L2-bg: #45a045;
 --color-calendar-graph-day-L3-bg: #047526;
@@ -116,6 +116,14 @@ div.float-right span.sr-only {
     padding: 5px 0 0;
     text-align: center;
 }
+
+.ContributionCalendar-label span[aria-hidden="true"]:not([style*="top"]) {
+    background-color: var(--color-1);
+    width: 25px;
+    text-align: start;
+    color: var(--color-4) !important;
+}
+
 
 .contrib-column {
     padding: 15px 0;
@@ -238,5 +246,8 @@ text.ContributionCalendar-label {
     .table-column {
         display: block;
         width: 100%;
+    }
+    .calendar .ContributionCalendar-day {
+        height: 10px !important;
     }
 }

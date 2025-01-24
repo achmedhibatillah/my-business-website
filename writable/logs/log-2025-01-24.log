@@ -1,0 +1,19 @@
+CRITICAL - 2025-01-24 10:32:43 --> ErrorException: Undefined array key "packets_proce"
+[Method: GET, Route: /]
+in APPPATH\Views\home\index-business.php on line 33.
+ 1 APPPATH\Views\home\index-business.php(33): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "packets_proce"', 'C:\\Users\\WINDOWS 11\\Documents\\1-Proyek\\achmedhibatillah\\app\\Views\\home\\index-business.php', 33)
+ 2 SYSTEMPATH\View\View.php(234): include('C:\\Users\\WINDOWS 11\\Documents\\1-Proyek\\achmedhibatillah\\app\\Views\\home\\index-business.php')
+ 3 SYSTEMPATH\View\View.php(237): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\View\View.php(487): CodeIgniter\View\View->render('home/index-business', null, true)
+ 5 APPPATH\Views\home\index.php(43): CodeIgniter\View\View->include('home/index-business')
+ 6 SYSTEMPATH\View\View.php(234): include('C:\\Users\\WINDOWS 11\\Documents\\1-Proyek\\achmedhibatillah\\app\\Views\\home\\index.php')
+ 7 SYSTEMPATH\View\View.php(237): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 8 SYSTEMPATH\Common.php(1171): CodeIgniter\View\View->render('home/index', [], true)
+ 9 APPPATH\Controllers\Home.php(38): view('home/index', [...])
+10 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Home->index()
+11 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+12 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+13 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+14 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+15 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+16 SYSTEMPATH\rewrite.php(44): require_once('C:\\Users\\WINDOWS 11\\Documents\\1-Proyek\\achmedhibatillah\\public\\index.php')
