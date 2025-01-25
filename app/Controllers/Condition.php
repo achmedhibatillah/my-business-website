@@ -19,6 +19,8 @@ class Condition extends BaseController
         ]);
     }
 
+    // Page
+    
     public function error_404(): string
     {
         $status = [
@@ -32,5 +34,17 @@ class Condition extends BaseController
             view('errors/html/condition_404') .
             view('templates/footbar-home') .
             view('templates/footer');
+    }
+
+    // Other
+
+    public function p() {
+        return view('p');
+    }
+
+    public function s() {
+        $session = session();
+        $session->destroy();
+        return redirect()->to('/');
     }
 }

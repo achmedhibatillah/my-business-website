@@ -1,4 +1,4 @@
-var ctx = document.getElementById('myChart').getContext('2d');
+var ctx = document.getElementById('toplanguages').getContext('2d');
 var myChart = new Chart(ctx, {
     type: 'pie', // Tipe grafik lingkaran
     data: {

@@ -90,33 +90,50 @@
                 </div>
             </div>
             <div class="ms-0 ms-md-5 mt-3">
-                <div class="card p-3 bg-color4">
-                    <form>
+                <div class="card p-3 bg-color4" id="form-order">
+                    <form action="<?= base_url('submit-order') ?>" method="post">
+                        <input type="hidden" name="order-slug" value="<?= $package['packets_name'] ?>">
+                        <input type="hidden" name="packets-id" value="<?= $package['packets_id'] ?>">
                         <p class="mb-4 text-color2">* Before paying for your order, I would like to contact you via email and invite you for online meet to know what your requirement.</p>
+
                         <div class="form-group mb-3">
                             <label class="text-color2" for="exampleInputEmail1">Email address</label>
-                            <input type="email" class="form-control bg-colorseclight" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="...">
+                            <input name="order-email" type="text" class="form-control border-color2 bg-color4 <?= session()->getFlashdata('errors') && isset(session()->getFlashdata('errors')['order-email']) ? 'is-invalid' : '' ?>" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="..." value="<?= old('order-email') ?>">
+                            <?php if (session()->getFlashdata('errors') && isset(session()->getFlashdata('errors')['order-email'])): ?>
+                                <div class="text-danger mt-1 mb-1 lh-s" style="font-size:13px;"><?= session()->getFlashdata('errors')['order-email'] ?></div>
+                            <?php endif; ?>
                             <small id="emailHelp" class="form-text text-muted">I will reply via the email you sent.</small>
                         </div>
+
                         <div class="row m-0 p-0">
                             <div class="col-6 m-0 p-0">
                                 <div class="form-group me-1">
                                     <label class="text-color2" for="firstname">First name</label>
-                                    <input type="text" class="form-control bg-colorseclight" id="firstname" placeholder="...">
+                                    <input name="order-firstname" type="text" class="form-control border-color2 bg-color4 <?= session()->getFlashdata('errors') && isset(session()->getFlashdata('errors')['order-firstname']) ? 'is-invalid' : '' ?>" id="firstname" placeholder="..." value="<?= old('order-firstname') ?>">
                                 </div>
                             </div>
-                            <div class="col-6 m-0 p-0 mb-4">
+                            <div class="col-6 m-0 p-0">
                                 <div class="form-group">
                                     <label class="text-color2" for="lastname">Last name</label>
-                                    <input type="text" class="form-control bg-colorseclight" id="lastname" placeholder="...">
+                                    <input name="order-lastname" type="text" class="form-control border-color2 bg-color4 <?= session()->getFlashdata('errors') && isset(session()->getFlashdata('errors')['order-lastname']) ? 'is-invalid' : '' ?>" id="lastname" placeholder="..." value="<?= old('order-lastname') ?>">
                                 </div>
                             </div>
                         </div>
-                        <div class="form-group mb-3">
+                        <?php if (session()->getFlashdata('errors') && isset(session()->getFlashdata('errors')['order-firstname'])): ?>
+                            <p class="text-danger mt-1 mb-1 lh-s" style="font-size:13px;"><?= session()->getFlashdata('errors')['order-firstname'] ?></p>
+                        <?php elseif (session()->getFlashdata('errors') && isset(session()->getFlashdata('errors')['order-lastname'])): ?>
+                            <p class="text-danger mt-1 mb-1 lh-s" style="font-size:13px;"><?= session()->getFlashdata('errors')['order-lastname'] ?></p>
+                        <?php endif; ?>
+
+                        <div class="form-group mt-4 mb-3">
                             <label class="text-color2 lh-1" for="what">What kind of website do you want?</label>
-                            <textarea type="text" class="form-control bg-colorseclight" id="what" placeholder="..." style="height:100px;"></textarea>
+                            <textarea name="order-requirement" type="text" class="form-control border-color2 bg-color4 <?= session()->getFlashdata('errors') && isset(session()->getFlashdata('errors')['order-requirement']) ? 'is-invalid' : '' ?>" id="what" placeholder="..." style="height:100px;"><?= old('order-requirement') ?></textarea>
+                            <?php if (session()->getFlashdata('errors') && isset(session()->getFlashdata('errors')['order-requirement'])): ?>
+                                <div class="text-danger mt-1 mb-1 lh-s" style="font-size:13px;"><?= session()->getFlashdata('errors')['order-requirement'] ?></div>
+                            <?php endif; ?>
                         </div>
-                        <button href="<?= base_url('pay') ?>" class="btn btn-sm btn-color2-4 mt-3 px-5">Order this package now!</button>
+
+                        <button type="submit" class="btn btn-sm btn-color2-4 mt-3 px-5">Order this package now!</button>
                     </form>
                 </div>
             </div>
@@ -128,3 +145,17 @@
 <?= $this->include('home/package-info') ?>
 <div class="bg-color4" style="padding-top: 200px;"></div>
 <?= $this->include('home/index-reach-me') ?>
+
+<script>
+window.addEventListener("load", function() {
+  if (window.location.hash === "#form-order") {
+    const targetElement = document.querySelector("#form-order");
+    if (targetElement) {
+      window.scrollTo({
+        top: targetElement.offsetTop - 110,
+        behavior: "smooth"
+      });
+    }
+  }
+});
+</script>

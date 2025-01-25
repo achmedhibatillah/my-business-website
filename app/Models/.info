@@ -207,3 +207,12 @@ INSERT INTO packages (
     TRUE,  -- API
     TRUE  -- Logo
 );
+
+CREATE TABLE suggestion (
+    suggestion_id INT AUTO_INCREMENT PRIMARY KEY,
+    suggestion_firstname VARCHAR(35) NOT NULL,
+    suggestion_lastname VARCHAR(35) NOT NULL,
+    suggestion_suggestion TEXT NOT NULL,
+    created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP,
+    updated_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP ON UPDATE CURRENT_TIMESTAMP
+);

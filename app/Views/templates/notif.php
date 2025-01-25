@@ -27,10 +27,10 @@
 </div>
 <div class="row m-0 p-0" style="z-index:11;">
     <div class="col-9 m-0 p-0">
-        <a href="https://wa.me/6281388324884" target="_blank" class="btn btn-color3 btn-sm py-0 shadow width-100 border-colorsec me-1"><i class="fab fa-whatsapp"></i> Oh, right!</a>
+        <a href="https://wa.me/6281388324884" target="_blank" class="btn btn-secondary btn-sm py-0 shadow" style="width:99%;"><i class="fab fa-whatsapp"></i> Oh, right!</a>
     </div>
     <div class="col-3 m-0 p-0">
-        <button id="close-floating-notif" class="btn btn-color3 btn-sm py-0 width-100 shadow border-colorsec">x</button>
+        <button id="close-floating-notif" class="btn btn-secondary btn-sm py-0 width-100 shadow">x</button>
     </div>
 </div>
 
@@ -42,12 +42,20 @@
 document.addEventListener("DOMContentLoaded", function() {
     const floatingCard = document.getElementById('floating-notif');
     const lpChat = document.getElementById('lp-chat');
+    let isFloatingCardClosed = false; // Flag untuk melacak status penutupan
+
+    // IntersectionObserver untuk mengatur tampilan floating-notif berdasarkan apakah lpChat ada di viewport
     const observer = new IntersectionObserver(entries => {
         entries.forEach(entry => {
             if (entry.isIntersecting) {
-                floatingCard.style.display = 'none';
+                // Jika sudah ditutup oleh user, jangan tampilkan lagi
+                if (!isFloatingCardClosed) {
+                    floatingCard.style.display = 'none';
+                }
             } else {
-                floatingCard.style.display = 'block';
+                if (!isFloatingCardClosed) {
+                    floatingCard.style.display = 'block';
+                }
             }
         });
     }, {
@@ -56,8 +64,11 @@ document.addEventListener("DOMContentLoaded", function() {
     });
 
     observer.observe(lpChat);
-});
-document.getElementById('close-floating-notif').addEventListener('click', function() {
-    document.getElementById('floating-notif').style.display = 'none';
+
+    // Menutup floating-notif ketika tombol close-floating-notif diklik
+    document.getElementById('close-floating-notif').addEventListener('click', function() {
+        floatingCard.style.display = 'none';
+        isFloatingCardClosed = true; // Set flag ke true setelah ditutup
+    });
 });
 </script>
