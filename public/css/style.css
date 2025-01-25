@@ -42,6 +42,7 @@
 .border-color2-m { border: 3px solid var(--color-2); }
 .border-color3-m { border: 3px solid var(--color-3); }
 .border-color4-m { border: 3px solid var(--color-4); }
+.border-colorsec-m { border: 3px solid var(--color-sec); }
 
 .btn-color1 { background-color: var(--color-1); color: var(--color-4); }
 .btn-color1:hover { background-color: var(--color-2); color: var(--color-4); border: 1px solid var(--color-1); }
@@ -72,13 +73,16 @@
 .fw-800 { font-weight:800; }
 .fw-900 { font-weight:900; }
 
+.shadow-m { box-shadow: 0 0 3px rgba(0, 0, 0, 0.5); }
+.shadow-l { box-shadow: 0 0 5px rgba(0, 0, 0, 0.5); }
+
 .cursor-pointer { cursor: pointer; }
 .img-death { pointer-events: none; -webkit-user-drag: none; }
 .td-none { text-decoration: none !important; }
 .no-select { user-select: none; -webkit-user-select: none; -moz-user-select: none; -ms-user-select: none; cursor: default; }
 
 /* Other */
-.card-reach { background: linear-gradient(to bottom right, var(--color-sec), var(--color-4), var(--color-4)); transition: 0.5s; }
-.card-reach:hover { background: linear-gradient(to top, var(--color-sec), var(--color-sec)); }
+.card-reach { background-color: var(--color-4); transition: 0.5s; }
+.card-reach:hover { background-color: var(--color-sec); }
 
 .card-skills { background-color: transparent; border: 1px solid var(--color-4); color: var(--color-4); height:193px; }

@@ -22,8 +22,26 @@ class Home extends BaseController
         ]);
     }
 
+    public function p() {
+        return view('p');
+    }
+
+    public function s() {
+        $session = session();
+        $session->destroy();
+        return redirect()->to('/');
+    }
+
     public function index(): string
     {
+        $session = session();
+        if (!$session->has('notif')) {
+            $session->set('notif', true);
+            $session->markAsTempdata('notif', 1800);
+        } elseif ($session->get('notif') === true) {
+            $session->set('notif', false);
+        }
+
         $status = [
             'page' => 'home',
             'judul' => 'Home'

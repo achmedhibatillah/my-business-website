@@ -12,7 +12,7 @@
 
     <title>Achmed Hibatillah | <?= $judul ?></title>
 
-    <link rel="icon" href="<?= base_url('images/favicon.png') ?>" type="image/png">
+    <link rel="icon" href="<?= base_url('images/profile.png') ?>" type="image/png">
 
     <!-- Bootstrap -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
@@ -33,6 +33,10 @@
 
     <!-- Chart.js -->
     <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/chartjs-plugin-3d"></script>
+    <script src="https://cdn.jsdelivr.net/npm/chartjs-plugin-datalabels"></script>
+    <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
+    <script src="<?= base_url('js/shart.js') ?>"></script>
 
     <!-- Font -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -43,6 +47,7 @@
     <link rel="stylesheet" href="<?= base_url('css/github-calendar.css') ?>"/>
 
     <!-- Internal CSS -->
+    <link rel="stylesheet" href="https://raw.githubusercontent.com/achmedhibatillah/cdn-achmedhibatillah.com/refs/heads/main/style.css">
     <link rel="stylesheet" href="<?= base_url('css/style.css') ?>">
     <?= $this->include('templates/style-lp') ?>
 
@@ -50,8 +55,9 @@
 <body>
 
 <button id="scrollToTopBtn" class="btn btn-primary">↑</button>
+
 <style>
-#scrollToTopBtn { position: fixed; bottom: 20px; right: 20px; display: none; background-color: var(--color-1); color: white; border: none; border-radius: 50%; font-size: 20px; padding: 10px; cursor: pointer; z-index: 9999; width: 40px; height: 40px; justify-content: center; align-items: center; box-shadow: 0 0 5px rgba(0, 0, 0, 0.8); }
+#scrollToTopBtn { position: fixed; bottom: 13px; right: 13px; display: none; background-color: var(--color-1); color: white; border: none; border-radius: 50%; font-size: 20px; padding: 10px; cursor: pointer; z-index: 9999; width: 40px; height: 40px; justify-content: center; align-items: center; box-shadow: 0 0 5px rgba(0, 0, 0, 0.8); }
 #scrollToTopBtn:hover { background-color:rgb(0, 21, 92); }
 </style>
 <script>

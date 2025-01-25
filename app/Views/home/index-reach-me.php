@@ -3,7 +3,7 @@
     <div class="d-flex justify-content-center">
         <div class="position-relative bg-color2" style="width:340px;height:40px;" data-aos="fade-up" data-aos-mirror="false" data-aos-easing="ease-in-out-back">
             <img src="<?= base_url('images/emoji/detective.png') ?>" style="width:60px;position:absolute;top:-13px;left:-20px;transform:rotate(-6deg);">
-            <h2 class="text-color4 text-center ls-xs" style="font-size:30px;">You can reach me at..</h2>
+            <h2 class="text-color4 text-center ls-xxs" style="font-size:30px;">You can reach me at..</h2>
         </div>
     </div>
     <div class="row m-0 mt-5 p-0" style="width:100%;">

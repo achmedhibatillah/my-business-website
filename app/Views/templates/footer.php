@@ -8,6 +8,9 @@
 <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
 <script src="<?= base_url('js/typed.js') ?>"></script>
 
+<!-- Chart JS -->
+<script src="<?= base_url('js/chart.js') ?>"></script>
+
 <!-- Data AOS -->
 <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
 <script>

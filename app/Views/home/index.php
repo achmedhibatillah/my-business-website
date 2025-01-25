@@ -1,3 +1,5 @@
+<?= $this->include('templates/notif') ?>
+
 <section class="position-relative bg-lp-top bg-color4" style="height:100vh;"> 
     <div class="row m-0 p-0 width-100 height-100">
         <div class="col-md-6"></div>
@@ -30,7 +32,10 @@
         <img src="<?= base_url('images/emoji/quote.png') ?>" class="position-absolute" style="width:50px;top:-50px;left:-10px;" data-aos="fade-down" data-aos-delay="10" data-aos-duration="700" data-aos-easing="ease-in-out-back">
         <h3 class="position-absolute fw-bold text-color4" style="top:-30px;left:50px;">About Me</h3>
         <img src="<?= base_url('images/emoji/job-developer.png') ?>" class="position-absolute" style="width:50px;top:-33px;right:20px;transform:rotate(7deg)">
-        <span id="type-about-me"></span>
+        <div class="position-relative">
+            <h5 class="ls-1 text-color1" style="opacity:0;text-align:justify !important;">I’m a skilled <i class="fst-normal bg-color2 text-color4">web developer</i> with expertise in <i class="fst-normal bg-color3 text-color4 p-0">full-stack development</i>, both front-end and back-end. I’m proficient in <i class="fst-normal bg-color3 text-color4 p-0">PHP</i> and have hands-on experience using popular frameworks like CodeIgniter and Laravel for building robust back-end systems. On the front-end, I have strong skills in <i class="fst-normal bg-color3 text-color4 p-0">HTML</i>, <i class="fst-normal bg-color3 text-color4 p-0">CSS (Bootstrap)</i>, and <i class="fst-normal bg-color3 text-color4 p-0">JavaScript</i>, which allow me to create responsive and interactive user interfaces. I’m also adept at <i class="fst-normal bg-color3 text-color4 p-0">managing database query</i> and working with <i class="fst-normal bg-color3 text-color4 p-0">database programming</i> to ensure efficient data handling and smooth integration across applications.</h5>
+            <span id="type-about-me" class="position-absolute" style="top:0;left:0;"></span>
+        </div>
     </div>
     <a href="<?= base_url('profile') ?>" class="btn btn-color4 btn-sm mt-2 px-5 fw-bold" data-aos="fade-up" data-aos-delay="10" data-aos-offset="50" data-aos-easing="ease-in-out-back">More <i class="fas fa-external-link-alt ms-2"></i></a>
 </div>
@@ -44,4 +49,6 @@
 
 <?= $this->include('home/index-message') ?>
 
-<?= $this->include('home/index-reach-me') ?>
+<?= $this->include('templates/trans-color2-color3-up') ?>
+
+<?= $this->include('home/index-reach-me') ?> 

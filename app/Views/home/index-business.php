@@ -26,9 +26,26 @@
 </section>
 
 <section class="bg-color4" style="padding-bottom:100px;">
+<?php $num = 1; ?>
 <div class="row m-0 p-0 width-100">
     <?php foreach($packages as $x) : ?>
-        <div class="col-md-4 m-0 p-0 d-flex justify-content-center align-items-center mb-4">
+        <?php 
+        // $justify_lg = '';
+        // if ($num % 3 == 1) {
+        //     $justify_lg = 'justify-content-lg-end';
+        // } elseif ($num % 3 == 2) {
+        //     $justify_lg = 'justify-content-lg-center';
+        // } else {
+        //     $justify_lg = 'justify-content-lg-start';
+        // }
+        // if ($num % 2 == 1) {
+        //     $justify_md = 'justify-content-md-end';
+        // } else {
+        //     $justify_md = 'justify-content-md-start';
+        // }
+        // $num++; 
+    ?>
+        <div class="col-12 col-md-6 col-lg-4 m-0 p-0 px-md-1 d-flex justify-content-center <?= '' // $justify_lg . ' ' . $justify_md ?> align-items-center mb-4">
             <div class="card bg-color4 border-color1-s m-0 py-4" style="width:340px;" data-aos="fade-up" data-aos-easing="ease-in-out-back">
                 <h1 class="text-color1 text-center ls-xs"><?= $x['packets_name'] ?></h1>
                 <div class="d-flex justify-content-center align-items-center">
