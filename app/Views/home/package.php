@@ -91,6 +91,11 @@
             </div>
             <div class="ms-0 ms-md-5 mt-3">
                 <div class="card p-3 bg-color4" id="form-order">
+                    <?php if (session()->getFlashdata('success')): ?>
+                        <div class="alert alert-success text-center text-color3 lh-1">
+                            <?= session()->getFlashdata('success') ?>
+                        </div>
+                    <?php endif; ?>
                     <form action="<?= base_url('submit-order') ?>" method="post">
                         <input type="hidden" name="order-slug" value="<?= $package['packets_name'] ?>">
                         <input type="hidden" name="packets-id" value="<?= $package['packets_id'] ?>">
@@ -103,7 +108,7 @@
                                 <div class="text-danger mt-1 mb-1 lh-s" style="font-size:13px;"><?= session()->getFlashdata('errors')['order-email'] ?></div>
                             <?php endif; ?>
                             <small id="emailHelp" class="form-text text-muted">I will reply via the email you sent.</small>
-                        </div>
+                        </div> 
 
                         <div class="row m-0 p-0">
                             <div class="col-6 m-0 p-0">

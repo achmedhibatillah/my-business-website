@@ -28,7 +28,7 @@
                 </div>
                 <div onclick="window.open('https://github.com/achmedhibatillah/', '_blank');" class="card-body bg-color4 text-color1 p-0 card-reach" style="border-radius:20px;margin:2px;cursor:pointer;">
                     <div class="d-flex justify-content-center" style="margin-top:23px;">
-                        <img src="<?= base_url('images/profile/github.jpg') ?>" style="height:130px;border-radius:50%;border:3px solid var(--color-2);">
+                        <img src="<?= base_url('images/profile/github.png') ?>" style="height:130px;border-radius:50%;border:3px solid var(--color-2);">
                     </div>
                     <p class="text-color2 text-center mt-3 mb-0 fw-bold">@achmedhibatillah</p>
                     <p class="text-color3 text-center fst-italic ls-xs" style="margin-top:-3px;font-size:14px;">click for look profile</p>
@@ -52,13 +52,13 @@
         <div class="col-md-3 d-flex justify-content-center align-items-center mb-3">
             <div class="card m-0 p-0 bg-color2" style="height:290px;width:220px;border-radius:23px;" data-aos="fade-up" data-aos-mirror="false" data-aos-easing="ease-in-out-back">
                 <div class="">
-                    <h5 class="text-center text-color4 mt-3"><i class="fas fa-envelope text-center me-1"></i> gmail</h5>
+                    <h5 class="text-center text-color4 mt-3"><i class="fas fa-envelope text-center me-1"></i> e-mail</h5>
                 </div>
-                <div onclick="window.open('mailto:achmedhibatillah.bn@gmail.com', '_blank');" class="card-body bg-color4 text-color1 p-0 card-reach" style="border-radius:20px;margin:2px;cursor:pointer;">
+                <div onclick="window.open('mailto:contact@achmedhibatillah.com', '_blank');" class="card-body bg-color4 text-color1 p-0 card-reach" style="border-radius:20px;margin:2px;cursor:pointer;">
                     <div class="d-flex justify-content-center" style="margin-top:23px;">
                         <img src="<?= base_url('images/profile/gmail.png') ?>" style="height:130px;border-radius:50%;border:3px solid var(--color-2);">
                     </div>
-                    <p class="text-color2 text-center mt-3 mb-0 fw-bold lh-xs">achmedhibatillah.bn<br>@gmail.com</p>
+                    <p class="text-color2 text-center mt-3 mb-0 fw-bold lh-xs">contact@<br>achmedhibatillah.com</p>
                     <p class="text-color3 text-center fst-italic ls-xs" style="margin-top:2px;font-size:14px;">click for send mail</p>
                 </div>
             </div>
