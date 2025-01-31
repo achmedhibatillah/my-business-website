@@ -1,0 +1,31 @@
+INFO - 2025-01-31 19:08:08 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2025-01-31 19:09:59 --> CodeIgniter\View\Exceptions\ViewException: Invalid file: "transaction/detail.php"
+[Method: GET, Route: transaction-5647634702]
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 41.
+ 1 SYSTEMPATH\View\View.php(222): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('transaction/detail.php')
+ 2 SYSTEMPATH\Common.php(1171): CodeIgniter\View\View->render('transaction/detail', [], true)
+ 3 APPPATH\Controllers\Transaction.php(47): view('transaction/detail', [...])
+ 4 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Transaction->detail('5647634702')
+ 5 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Transaction))
+ 6 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 9 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+10 SYSTEMPATH\rewrite.php(44): require_once('C:\\Users\\WINDOWS 11\\Documents\\1-Proyek\\achmedhibatillah\\public\\index.php')
+CRITICAL - 2025-01-31 20:50:58 --> ErrorException: Undefined variable $total
+[Method: GET, Route: download-transaction-5647634702]
+in APPPATH\Views\transaction\pdf.php on line 101.
+ 1 APPPATH\Views\transaction\pdf.php(101): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $total', 'C:\\Users\\WINDOWS 11\\Documents\\1-Proyek\\achmedhibatillah\\app\\Views\\transaction\\pdf.php', 101)
+ 2 SYSTEMPATH\View\View.php(234): include('C:\\Users\\WINDOWS 11\\Documents\\1-Proyek\\achmedhibatillah\\app\\Views\\transaction\\pdf.php')
+ 3 SYSTEMPATH\View\View.php(237): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1171): CodeIgniter\View\View->render('transaction/pdf', [], true)
+ 5 APPPATH\Controllers\Transaction.php(69): view('transaction/pdf', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Transaction->download('5647634702')
+ 7 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Transaction))
+ 8 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+12 SYSTEMPATH\rewrite.php(44): require_once('C:\\Users\\WINDOWS 11\\Documents\\1-Proyek\\achmedhibatillah\\public\\index.php')
+INFO - 2025-01-31 21:25:34 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2025-01-31 21:26:20 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.

@@ -16,10 +16,7 @@
           <a class="nav-link ls-nav text-color4" href="<?= base_url('#about-me') ?>">About Me</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link ls-nav text-color4" href="<?= base_url('#skills') ?>">My Skills</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link ls-nav text-color4" href="<?= base_url('#project') ?>">My Project</a>
+          <a class="nav-link ls-nav text-color4" href="<?= base_url('#portofolios') ?>">My Portofolio’s</a>
         </li>
         <li class="nav-item">
           <a class="nav-link ls-nav text-color4" href="<?= base_url('#business') ?>">Business</a>
@@ -38,6 +35,8 @@
     </div>
   </div>
 </nav>
+
+<div id="main" class="m-0 p-0 w-100">
 
 <style>
 .active {

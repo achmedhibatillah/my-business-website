@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
     <meta property="og:title" content="Achmed Hibatillah" />
-    <meta property="og:description" content="Welcome to Ahmed Hibatillah's portfolio website!" />
+    <meta property="og:description" content="Welcome to Ahmed Hibatillah's official portfolio and business site!" />
     <meta property="og:url" content="https://achmedhibatillah.com" />
     <meta property="og:image" content="<?= base_url('images/meta.png') ?>" />
     <meta property="og:type" content="website" />
@@ -28,8 +28,8 @@
     <!-- SweetAlert CSS -->
     <link href="https://cdn.jsdelivr.net/npm/sweetalert2@11.6.3/dist/sweetalert2.min.css" rel="stylesheet">
 
-    <!-- CDN AOS -->
-    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <!-- AOS -->
+    <link rel="stylesheet" href="<?= base_url('css/aos.css') ?>" />
 
     <!-- Chart.js -->
     <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>

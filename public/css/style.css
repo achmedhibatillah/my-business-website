@@ -94,6 +94,8 @@
 .td-none { text-decoration: none !important; }
 .no-select { user-select: none; -webkit-user-select: none; -moz-user-select: none; -ms-user-select: none; cursor: default; }
 
+#main { overflow-x: hidden; }
+
 /* Other */
 .is-invalidd { border: 2px solid #e14c35 !important;}
 .card-reach { background-color: var(--color-4); transition: 0.5s; }

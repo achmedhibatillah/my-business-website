@@ -17,6 +17,9 @@ $routes->get('profile', 'Home::profile');
 $routes->get('package-(:segment)', 'Home::package_detail/$1');
 $routes->get('chat', 'Home::chat');
 
+$routes->get('transaction-(:num)', 'Transaction::detail/$1');
+$routes->get('download-transaction-(:num)', 'Transaction::download/$1');
+
 $routes->post('submit-suggestion', 'Home::suggestion_a');
 $routes->post('submit-rate', 'Home::rate_a');
 $routes->post('submit-order', 'Home::order_a');

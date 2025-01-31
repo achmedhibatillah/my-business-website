@@ -216,3 +216,69 @@ CREATE TABLE suggestion (
     created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP,
     updated_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP ON UPDATE CURRENT_TIMESTAMP
 );
+
+CREATE TABLE transaction (
+    transaction_id BIGINT PRIMARY KEY AUTO_INCREMENT,
+    transaction_domain VARCHAR(255),
+    transaction_requirement TEXT,
+    
+    transaction_price_hosting BIGINT DEFAULT 0,
+    transaction_desc_hosting VARCHAR(255),
+    transaction_price_domain BIGINT DEFAULT 0,
+    transaction_desc_domain VARCHAR(255),
+    transaction_price_ssl BIGINT DEFAULT 0,
+    transaction_desc_ssl VARCHAR(255),
+    transaction_price_api BIGINT DEFAULT 0,
+    transaction_desc_api VARCHAR(255),
+
+    transaction_service_uiux BIGINT DEFAULT 0,
+    transaction_service_frontend BIGINT DEFAULT 0,
+    transaction_service_backend BIGINT DEFAULT 0,
+    transaction_service_database BIGINT DEFAULT 0,
+
+    transaction_framework VARCHAR(255),
+
+    created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP,
+    updated_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP ON UPDATE CURRENT_TIMESTAMP
+);
+
+INSERT INTO TRANSACTION (
+    transaction_id,
+
+	transaction_domain,
+    transaction_requirement,
+    transaction_price_hosting,
+    transaction_desc_hosting,
+    transaction_price_domain,
+    transaction_desc_domain,
+    transaction_price_ssl,
+    transaction_desc_ssl,
+    transaction_price_api,
+    transaction_desc_api,
+    transaction_service_uiux,
+    transaction_service_frontend,
+    transaction_service_backend,
+    transaction_service_database,
+    transaction_framework,
+    created_at,
+    updated_at
+) VALUES (
+	5647634702,
+	'wormvillage.com',
+    'Information system for organic waste management (Worm Village).',
+    531468,
+    'Premium hosting package for 1 year (Hostinger).',
+    169508,
+    'Domain package (.com) for 1 year (Hostinger).',
+    0,
+    'Standard SSL certificate (https) for 1 year (Hostinger).',
+    0,
+    '',
+    0,
+    116810,
+    477209,
+    198005,
+    'Codeigniter V. 4.6.0',
+    CURRENT_TIMESTAMP,
+    CURRENT_TIMESTAMP
+);

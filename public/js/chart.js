@@ -1,40 +1,37 @@
 var ctx = document.getElementById('toplanguages').getContext('2d');
 var myChart = new Chart(ctx, {
-    type: 'pie', // Tipe grafik lingkaran
+    type: 'pie',
     data: {
         labels: ['PHP', 'JavaScript', 'SCSS', 'HTML', 'CSS', 'Smarty'],
         datasets: [{
             label: 'Language Distribution',
-            data: [88.4, 4.21, 3.25, 2.92, 1.08, 0.14], // Data
+            data: [88.4, 4.21, 3.25, 2.92, 1.08, 0.14],
             backgroundColor: [
-                '#4F5D95', // PHP (warna khas PHP)
-                '#F7DF1E', // JavaScript (warna khas JS)
-                '#C74894', // SCSS (warna khas SCSS)
-                '#E44D26', // HTML (warna khas HTML)
-                '#1572B6', // CSS (warna khas CSS)
-                '#F8A400'  // Smarty (warna khas Smarty)
+                '#4F5D95', // PHP
+                '#F7DF1E', // JavaScript
+                '#C74894', // SCSS
+                '#E44D26', // HTML
+                '#1572B6', // CSS
+                '#F8A400'  // Smarty
             ],
-            borderColor: [
-                '#4F5D95',
-                '#F7DF1E',
-                '#C74894',
-                '#E44D26',
-                '#1572B6',
-                '#F8A400'
-            ],
-            borderWidth: 1
+            borderWidth: 0
         }]
     },
     options: {
         responsive: true,
+        maintainAspectRatio: false,
+        animation: {
+            duration: 1500,
+            easing: 'easeInOutBounce'
+        },
         plugins: {
             legend: {
-                display: false, // Menghilangkan legenda (labels)
+                display: false,
             },
             tooltip: {
                 callbacks: {
                     label: function(tooltipItem) {
-                        return tooltipItem.label + ': ' + tooltipItem.raw.toFixed(2) + '%'; // Menampilkan persen
+                        return tooltipItem.label + ': ' + tooltipItem.raw.toFixed(2) + '%';
                     }
                 }
             }

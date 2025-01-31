@@ -38,9 +38,9 @@ $certifications = [
             <h1 class="text-center text-color3 fw-bold ls-xs position-relative bg-color4" style="border-radius:20px;" data-aos="fade-up" data-aos-mirror="false" data-aos-delay="10" data-aos-easing="ease-in-out-back">
                 <img src="<?= base_url('images/emoji/laptop.png') ?>" class="position-absolute" style="top:-15px;left:-15px;width:40px;transform:rotate(-8deg);" data-aos="fade-up" data-aos-mirror="false" data-aos-delay="400" data-aos-easing="ease-in-out-back">
                 <img src="<?= base_url('images/emoji/face-wow.png') ?>" class="position-absolute" style="top:7px;right:-16px;width:35px;transform:rotate(8deg);" data-aos="fade-up" data-aos-mirror="false" data-aos-delay="400" data-aos-easing="ease-in-out-back">
-                My Project
+                My Project’s
             </h1>
-            <p class="text-color4 text-center fst-italic px-5 lh-xs py-1" style="margin-top:-4px;" data-aos="fade-up" data-aos-mirror="false" data-aos-delay="150" data-aos-easing="ease-in-out-back">This is a project I’ve worked on.</p>
+            <p class="text-color4 text-center fst-italic px-5 lh-xs py-1" style="margin-top:-4px;" data-aos="fade-up" data-aos-mirror="false" data-aos-delay="150" data-aos-easing="ease-in-out-back">This is a project’s I’ve worked on.</p>
         </div>
     </div>
     <div class="row m-0 p-0 mt-5">
@@ -99,25 +99,44 @@ $certifications = [
     </div>
     <div class="row m-0 p-0">
         <div class="col-md-4 d-flex justify-content-center justify-content-md-start align-items-center">
-            <div class="card mx-4 px-4 m-0 border-color2 d-flex justify-content-center align-items-center position-relative mt-5 mb-5 mb-md-0" style="width:95%;height:320px;background:linear-gradient(to bottom right,var(--color-sec), var(--color-4),var(--color-4), var(--color-4),var(--color-sec));" data-aos="fade-up" data-aos-delay="10" data-aos-easing="ease-in-out-back">
-                <h4 class="text-color4 text-center position-absolute position-absolute lh-xs ls-xs" style="top:-12px;left:50%;transform:translate(-50%,-90%);">
+            <div class="card mx-4 px-4 m-0 border-color2 d-flex justify-content-center align-items-center position-relative shadow-lg rounded mt-5 mb-5 mb-md-0" style="width:95%;height:320px;background:linear-gradient(to bottom right,var(--color-sec), var(--color-4),var(--color-4), var(--color-4),var(--color-sec));" data-aos="fade-up" data-aos-delay="10" data-aos-easing="ease-in-out-back">
+                <h4 class="text-white text-center position-absolute lh-xs ls-xs fw-bold" style="top:-12px; left:50%; transform:translate(-50%,-90%);">
                     Top Languages
-                    <img src="<?= base_url('images/emoji/rolled-newspapper.png') ?>" class="position-absolute img-death" style="z-index:2;top:8px;left:-19px;width:30px;transform:translate(-50%,-50%) rotate(-5deg);" data-aos="fade-up" data-aos-mirror="false" data-aos-delay="400" data-aos-easing="ease-in-out-back">
-                    <img src="<?= base_url('images/emoji/books.png') ?>" class="position-absolute img-death" style="z-index:2;top:10px;right:-57px;width:35px;transform:translate(-50%,-50%) rotate(0deg);" data-aos="fade-up" data-aos-mirror="false" data-aos-delay="400" data-aos-easing="ease-in-out-back">
+                    <img src="<?= base_url('images/emoji/rolled-newspapper.png') ?>" class="position-absolute img-death" style="z-index:2; top:8px; left:-19px; width:30px; transform:translate(-50%,-50%) rotate(-5deg);" data-aos="fade-up" data-aos-mirror="false" data-aos-delay="400" data-aos-easing="ease-in-out-back">
+                    <img src="<?= base_url('images/emoji/books.png') ?>" class="position-absolute img-death" style="z-index:2; top:10px; right:-57px; width:35px; transform:translate(-50%,-50%) rotate(0deg);" data-aos="fade-up" data-aos-mirror="false" data-aos-delay="400" data-aos-easing="ease-in-out-back">
                 </h4>
-                <div class="mt-4 mb-3" style="width:50%;">
-                    <canvas id="toplanguages"></canvas>
-                </div>
-                <br>
-                <div class="">
-                    <p class="text-center text-color3">
-                        <i class="fas fa-circle" style="color:#4F5D95;"></i>PHP |
-                        <i class="fas fa-circle" style="color:#F7DF1E;"></i>JavaScript |
-                        <i class="fas fa-circle" style="color:#C74894;"></i>SCSS |
-                        <i class="fas fa-circle" style="color:#E44D26;"></i>HTML |
-                        <i class="fas fa-circle" style="color:#1572B6;"></i>CSS |
-                        <i class="fas fa-circle" style="color:#F8A400;"></i>Smarty
-                    </p>
+                <div>
+                    <div class="d-flex justify-content-center">
+                        <div class="mb-0" style="width:180px;height:180px;">
+                            <canvas id="toplanguages"></canvas>
+                        </div>
+                    </div>
+                    <div class="mt-3 mb-0 text-color3 d-flex flex-wrap justify-content-center align-items-center gap-2 px-2" style="line-height: 1.2;">
+                        <div class="d-flex align-items-center gap-1">
+                            <i class="fas fa-circle text-shadow" style="color:#4F5D95;"></i>
+                            <span class="fw-bold">PHP</span>
+                        </div>
+                        <div class="d-flex align-items-center gap-1">
+                            <i class="fas fa-circle text-shadow" style="color:#F7DF1E;"></i>
+                            <span class="fw-bold">JavaScript</span>
+                        </div>
+                        <div class="d-flex align-items-center gap-1">
+                            <i class="fas fa-circle text-shadow" style="color:#C74894;"></i>
+                            <span class="fw-bold">SCSS</span>
+                        </div>
+                        <div class="d-flex align-items-center gap-1">
+                            <i class="fas fa-circle text-shadow" style="color:#E44D26;"></i>
+                            <span class="fw-bold">HTML</span>
+                        </div>
+                        <div class="d-flex align-items-center gap-1">
+                            <i class="fas fa-circle text-shadow" style="color:#1572B6;"></i>
+                            <span class="fw-bold">CSS</span>
+                        </div>
+                        <div class="d-flex align-items-center gap-1 my-0">
+                            <i class="fas fa-circle text-shadow" style="color:#F8A400;"></i>
+                            <span class="fw-bold">Smarty</span>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
@@ -138,7 +157,7 @@ $certifications = [
                                                 type="button" 
                                                 data-bs-target="#slideCard" 
                                                 data-bs-slide="prev" 
-                                                style="x-index:2; left: -40px; top: 50%; transform: translateY(-50%); width: 30px; height: 30px;">
+                                                style="z-index:2; left: -40px; top: 50%; transform: translateY(-50%); width: 30px; height: 30px;">
                                             <span class="text-white" aria-hidden="true"><i class="fas fa-arrow-left"></i></span>
                                         </button>
                                         <img src="<?= $cert['image'] ?>" 

@@ -18,8 +18,8 @@
                     IT Undergraduate Student <br>at Brawijaya University
                 </h4>
                 <div class="d-flex flex-column flex-md-row align-items-center mt-0 mt-lg-4 p-0" style="width:320px;">
-                    <a href="<?= base_url('#about-me') ?>" class="btn btn-sm btn-color1 mt-3 mt-md-0 me-md-1" style="width:160px;" data-aos="fade-up" data-aos-delay="550" data-aos-easing="ease-in-out-back">Know about me</a>
-                    <a href="<?= base_url('#business') ?>" class="btn btn-sm btn-color1 mt-1 mt-md-0" style="width:160px;" data-aos="fade-up" data-aos-delay="750" data-aos-easing="ease-in-out-back">Business Information</a>
+                    <a href="<?= base_url('#about-me') ?>" class="btn btn-sm btn-color1 mt-3 mt-md-0 me-md-1 lh-1" style="width:160px;" data-aos="fade-up" data-aos-delay="550" data-aos-easing="ease-in-out-back">Know about me</a>
+                    <a href="<?= base_url('#business') ?>" class="btn btn-sm btn-color1 mt-1 mt-md-0 lh-1" style="width:160px;" data-aos="fade-up" data-aos-delay="750" data-aos-easing="ease-in-out-back">Business Information</a>
                 </div>
             </div>
         </div>
@@ -41,9 +41,13 @@
 </div>
 </section>
 
+<?= $this->include('home/index-portofolios') ?>
+
 <?= $this->include('home/index-skills') ?>
 
 <?= $this->include('home/index-project') ?>
+
+<?= $this->include('home/index-organizations') ?>
 
 <?= $this->include('home/index-business') ?>
 

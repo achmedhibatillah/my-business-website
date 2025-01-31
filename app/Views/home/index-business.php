@@ -24,7 +24,7 @@
 </div>
 </section>
 
-<section class="bg-color4" style="padding-bottom:100px;">
+<section class="bg-color4 pt-5" style="padding-bottom:100px;">
 <?php $num = 1; ?>
 <div class="row m-0 p-0 width-100">
     <?php foreach($packages as $x) : ?>
